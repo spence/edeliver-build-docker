@@ -7,7 +7,7 @@ RUN \
   dpkg -i /tmp/erlang-solutions_1.0_all.deb && \
   curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - && \
   apt-get update && \
-  apt-get install -y esl-erlang elixir=1.3.2-1 openssh-server git nodejs
+  apt-get install -y esl-erlang elixir=1.3.2-1 openssh-server git nodejs build-essential
   # apt-get clean && \
   # rm -rf /var/lib/apt/lists/*
 
