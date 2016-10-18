@@ -14,7 +14,7 @@ RUN \
   mkdir -p /var/run/sshd && \
   sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
-COPY ssh_key.pub /root/.ssh/authorized_keys
+COPY ssh-key.pub /root/.ssh/authorized_keys
 
 RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
